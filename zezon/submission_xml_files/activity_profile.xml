@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zezon_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/layout_profile_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header: snowflake decorations, profile picture, name and title -->
+        <FrameLayout
+            android:id="@+id/layout_profile_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header">
+
+            <ImageView
+                android:id="@+id/img_snowflake_left"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="top|start"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:alpha="0.8"
+                android:contentDescription="@string/decor_desc"
+                android:src="@drawable/ic_snowflake" />
+
+            <ImageView
+                android:id="@+id/img_snowflake_right"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="top|end"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="72dp"
+                android:alpha="0.6"
+                android:contentDescription="@string/decor_desc"
+                android:src="@drawable/ic_snowflake" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="36dp"
+                android:paddingTop="48dp">
+
+                <ImageView
+                    android:id="@+id/img_profile_picture"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/bg_avatar"
+                    android:clipToOutline="true"
+                    android:contentDescription="@string/profile_image_desc"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_profile_placeholder" />
+
+                <TextView
+                    android:id="@+id/tv_full_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/profile_name"
+                    android:textColor="@color/zezon_navy"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_job_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/profile_title"
+                    android:textColor="@color/zezon_navy"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Card: contact and academic information -->
+        <LinearLayout
+            android:id="@+id/layout_info_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/Zezon.InfoText"
+                android:drawableStart="@drawable/ic_email"
+                android:text="@string/profile_email" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/zezon_border" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/Zezon.InfoText"
+                android:drawableStart="@drawable/ic_phone"
+                android:text="@string/profile_phone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/zezon_border" />
+
+            <TextView
+                android:id="@+id/tv_department"
+                style="@style/Zezon.InfoText"
+                android:drawableStart="@drawable/ic_school"
+                android:text="@string/profile_department" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_edit_profile"
+            style="@style/Zezon.Button"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/btn_edit_profile" />
+
+    </LinearLayout>
+</ScrollView>

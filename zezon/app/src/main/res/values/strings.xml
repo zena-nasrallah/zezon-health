@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Zezon Health</string>
+    <!--  Profile screen  -->
+    <string name="profile_name">Zena Nasrallah</string>
+    <string name="profile_title">Health Informatics Student</string>
+    <string name="profile_email">zena@example.com</string>
+    <string name="profile_phone">+962 79 123 4567</string>
+    <string name="profile_department">Department: Artificial Intelligence (AI)</string>
+    <string name="profile_image_desc">Profile picture</string>
+    <string name="btn_edit_profile">Edit Profile</string>
+    <!--  Sign-up screen  -->
+    <string name="signup_title">Create an Account</string>
+    <string name="signup_subtitle">Join students building smart tools for a healthier tomorrow</string>
+    <string name="hint_full_name">Full name</string>
+    <string name="hint_email">Email address</string>
+    <string name="hint_phone">Phone number</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm password</string>
+    <string name="label_gender">Gender</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="label_languages">Programming languages of interest</string>
+    <string name="lang_java">Java</string>
+    <string name="lang_kotlin">Kotlin</string>
+    <string name="lang_python">Python</string>
+    <string name="lang_cpp">C++</string>
+    <string name="label_department">Academic department</string>
+    <string name="terms_agree">I agree to the Terms and Conditions</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="decor_desc">Decorative snowflake</string>
+    <string-array name="departments">
+        <item>Select department</item>
+        <item>Computer Science (CS)</item>
+        <item>Software Engineering (SE)</item>
+        <item>Cybersecurity</item>
+        <item>Artificial Intelligence (AI)</item>
+    </string-array>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <!--  Winter pastel palette: sky blue, soft pink, light yellow  -->
+    <color name="zezon_sky">#BFE3F7</color>
+    <color name="zezon_sky_deep">#3C8CCB</color>
+    <color name="zezon_pink">#FBD9E4</color>
+    <color name="zezon_pink_deep">#E58FAE</color>
+    <color name="zezon_yellow">#FFE9A0</color>
+    <color name="zezon_yellow_ripple">#33F5C242</color>
+    <color name="zezon_background">#F6FAFE</color>
+    <color name="zezon_card">#FFFFFF</color>
+    <color name="zezon_navy">#2B4A6F</color>
+    <color name="zezon_text_secondary">#6B7F99</color>
+    <color name="zezon_border">#D6E4F0</color>
+    <color name="white">#FFFFFF</color>
+</resources>
